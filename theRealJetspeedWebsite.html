@@ -9,16 +9,136 @@
 			font-family: "Tahoma", Geneva, sans-serif;
 			min-width: 960px;
 		}
+		.container{
+			width: 960px;
+			margin: auto;
+			overflow: auto;
+			/*border: 1px solid black; /* just to see, remove when finished */
+		}
+		header{
+			text-align: center;
+			width: 100%;
+		}
+		nav{
+			font-weight: bold;
+			background-image: url("images/blacktile.jpg");
+			background-repeat: repeat-x;
+		}
+		nav ul{
+			list-style-type: none;
+			margin: 0px;
+			padding: 20px 0px;
+		}
+		li{
+			display: inline; /*Holy crap this is awesome! Makes sense, turned these into line items*/
+			margin: 20px;
+			text-transform: uppercase;
+			/*border: 1px solid black; /*remove when done editing*/
+		}
+		a{
+			text-decoration: none;
+			color: white;
+		}
+		a:hover{
+			border-bottom: 5px solid lightgray;
+		}
+		main h1{
+			font-weight: bold;
+			letter-spacing: 0.5px;
+			font-size: 2em;
+			margin-top: 50px;
+			border-bottom: 1px dashed lightgray;
+		}
+		main img{
+			width: 70%;
+			padding: 2px;
+			border: 1px solid lightgray;
+		}
+		.customerBox{
+			border: 2px outset lightgray;
+			width: 60%;
+			margin-bottom: 20px;
+			border-radius: 10px;
+		}
+		.customerBox h1{
+			font-size: 1.2em;
+			margin-top: 0px;
+			padding: 10px;
+		}
+		.customerBox h2{
+			font-size: 1em;
+			font-weight: normal;
+			font-style: italic;
+			text-align: right;
+			padding-top: 5px;
+			padding-right: 10px;
+			border-top: 1px dashed lightgray;
+		}
+		.floatLeft{
+			margin-left: 15%;
+			float: left;
+		}
+		.floatRight{
+			margin-right: 15%;
+			float: right;
+		}
+		.clearfloat{
+			clear: both;
+		}
+		main table{
+			border: 1px solid lightgray;
+			margin: auto;
+			padding: 5px;
+			border-radius: 10px;
+		}
+		main th, td{
+			padding: 20px;
+			border: 1px solid lightgray;
+		}
+		th{
+			background-color: #505E67;
+			color: white;
+			font-size: 1.2em;
+		}
+		tr:nth-child(odd){
+			background-color: #E6E6E6;
+		}
+		footer{
+			text-align: center;
+			width: 100%;
+			background-color: #232244;
+			color: white;
+		}
+		footer a{
+			color: white;
+		}
+		#contactUs{
+			width: 150px;
+			height: 30px;
+			background-color: #26244B;
+			text-align: center;
+			padding: 10px;
+			border-radius: 5px;
+			position: fixed;
+			bottom: 0;
+			right: 0;
+		}
+		#contactUs a{
+			color: white;
+			text-decoration-style: none;
+		}
 	</style>
 </head>
 <body>
+<div id="contactUs"><a href="mailto:jamie@learncodingfast.com">Email Us</a></div>
 <header>
+<img src="images/logo.png">
 	<nav>
 		<div class="container">
 			<ul>
 			<li ><a href="https://www.example.com">HOME</a></li>
 			<li><a href="https://www.example.com">ABOUT US</a></li>
-			<li><a href="https://www.example.com">BOOK HOTEL</a></li>
+			<li><a href="https://www.hotels.com">BOOK HOTEL</a></li>
 			<li><a href="https://www.example.com">BOOK FLIGHT</a></li>
 			<li><a href="https://www.example.com">BOOK PACKAGE</a></li>
 			<li><a href="https://www.example.com">TRAVEL INSURANCE</a></li>
@@ -30,7 +150,7 @@
 			<H1>Why Travel With Us?</H1>
 			<p>Awarded #1 travel agency for families with pre-school kids.</p>
 			<p>Accredited with National Travel Agencies Association.</p>
-			<p>Awarded Best Tour Agency in 2013, 2014.</p>
+			<p>Awarded Best Tour Agency in 2013, 2014, 2015, 2016</p>
 
 			<h1>Photo Galleries</h1>
 
@@ -39,13 +159,13 @@
 			<h2>Japan</h2>
 			<img src="images/japan.jpg">
 			<h2>China</h2>
-			<img src="images/china.jpg">
+			<img src="images/DSC_0002.jpg">
 
 			<h1>What Customers are Saying</h1>
 
 			<div class="customerBox floatLeft">
 				<h1>An Incredible Experience</h1>
-				<p>I went to Thailand with my wife Valerie for my dad's wedding. We had a great time, and JetSpeed really got us into the hard-to-get-in places. Definately recommend to friends.</p>
+				<p>I went to Thailand with my wife Valerie for my dad's wedding. We had a great time, and JetSpeed really got us into the hard-to-get-in places. Definitely recommend to friends.</p>
 				<h2>Alex Anthony</h2>
 			</div>
 			<div class="customerBox floatRight">
@@ -68,7 +188,7 @@
 				<p>Our guide Yang is so knowledgeable and experienced. He goes out of the way to help us secure the best seats for all the performances, and also took good care of my grandma who was sick on the trip. Thanks, Yang. Look forward to travelling with Jetspeed again.</p>
 				<h2>Gail Scott</h2>
 			</div>
-
+			<div class="clearfloat"></div>
 			<h1>Upcoming Tour Dates</h1>
 			<table>
 				<tr><th>Tour Packages</th><th>Dates</th><th>Status</th></tr>
