@@ -49,9 +49,59 @@
 			border-bottom: 1px dashed lightgray;
 			text-align: center;
 		}
+		.infoBox{
+			border: 2px outset lightgray;
+			width: 60%;
+			margin-bottom: 20px;
+			border-radius: 10px;
+		}
+		#demographics{
+			margin-left: 15%;
+			float: left;
+		}
+		#hotelInfo{
+			margin-right: 15%;
+			float: right;
+		}
+		.clearfloat{
+			clear: both;
+		}
+		#submitBtn{
+			display: block;
+			margin: auto;
+			font-size: 3em;
+			font-weight: bold;
+		}
+		#contactUs{
+			width: 150px;
+			height: 30px;
+			background-color: #26244B;
+			text-align: center;
+			padding: 10px;
+			border-radius: 5px;
+			position: fixed;
+			bottom: 0;
+			right: 0;
+		}
+		#contactUs a{
+			color: white;
+			text-decoration-style: none;
+		}
+		footer{
+			text-align: center;
+			width: 100%;
+			background-color: #232244;
+			color: white;
+			margin-top: 223px;
+		}
+		footer a{
+			color: white;
+		}
+
 	</style>
 </head>
 <body>
+<div id="contactUs"><a href="mailto:jamie@learncodingfast.com">Email Us</a></div>
 <header>
 <img src="../images/logo.png">
 	<nav>
@@ -70,28 +120,32 @@
 <main>
 	<div class="container">
 		<h1>Book Your Hotel</h1>
-		<fieldset>
+		<form>
+		<fieldset id="demographics" class="infoBox">
 			<legend>Demographics</legend>
 			<label>First Name:<br/>
-			<input type="text" name="firstName" name=""></label><br/>	
+			<input type="text" name="firstName" name="" required="required"></label><br/>	
 			<label>Last Name: <br/>
-			<input type="text" name="lastName"></label><br/>
+			<input type="text" name="lastName" required="required"></label><br/>
 			<label>Phone Number:<br/>
-			<input type="text" name="phoneNumber"></label>
+			<input type="text" name="phoneNumber" required="required"></label>
 		</fieldset>
-		<fieldset>
+		<fieldset id="hotelInfo" class="infoBox">
 			<label for="checkIn">Check in:</label>
-			<input type="date" name="checkIn"/>
+			<input type="date" name="checkIn" required="required"/>
 			<label for="checkOut">Check out:</label>
-			<input type="date" name="checkout"/><br/>
+			<input type="date" name="checkout" required="required"/><br/>
 			<label for="numAdults">Number of Adults:<br/>
-			<input type="text" name="numAdults"></label><br/>
+			<input type="text" name="numAdults" required="required"></label><br/>
 			<label for="numKids">Number of Children:</label>	<br/>
-			<input type="text" name="numKids"><br/>
+			<input type="text" name="numKids" required="required"><br/>
 			<label for="city">City:<br/></label>
-			<input type="text" name="city"><br/>
-			<label><button>Submit</button></label>
-		</fieldset>
+			<input type="text" name="city" required="required"><br/>
+			</fieldset>
+			<div class="clearfloat"></div>
+			<label><input type="submit" value="Submit" id="submitBtn"></label>
+
+		</form>
 	</div>
 </main>
 <footer>
