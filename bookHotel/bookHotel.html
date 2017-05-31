@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Book Your Hotel</title>
+	<meta name="viewport" content="width=device-width">
+	<style type="text/css">
+		body{
+			margin: 0;
+			font-family: "Tahoma", Geneva, sans-serif;
+			min-width: 960px;
+		}
+		.container{
+			width: 960px;
+			margin: auto;
+			overflow: auto;
+			/*border: 1px solid black; /* just to see, remove when finished */
+		}
+		header{
+			text-align: center;
+			width: 100%;
+		}
+		nav{
+			font-weight: bold;
+			background-image: url("images/blacktile.jpg");
+			background-repeat: repeat-x;
+		}
+		nav ul{
+			list-style-type: none;
+			margin: 0px;
+			padding: 20px 0px;
+		}
+		li{
+			display: inline; /*Holy crap this is awesome! Makes sense, turned these into line items*/
+			margin: 20px;
+			text-transform: uppercase;
+		}
+		a{
+			text-decoration: none;
+			color: white;
+		}
+		a:hover{
+			border-bottom: 5px solid lightgray;
+		}
+		main h1{
+			font-weight: bold;
+			letter-spacing: 0.5px;
+			font-size: 2em;
+			margin-top: 50px;
+			border-bottom: 1px dashed lightgray;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+<header>
+<img src="../images/logo.png">
+	<nav>
+		<div class="container">
+			<ul>
+				<li><a href="../theRealJetspeedWebsite.html">Home</a></li>
+				<li><a href="../about/about.html">About Us</a></li>
+				<li><a href="bookhotel.html">Book Hotel</a></li>
+				<li><a href="https://www.example.com">Book Flight</a></li>
+				<li><a href="https://www.example.com">Book Package</a></li>
+				<li><a href="https://www.example.com">Travel Insurance</a></li>
+			</ul>
+		</div>
+	</nav>
+</header>
+<main>
+	<div class="container">
+		<h1>Book Your Hotel</h1>
+		<fieldset>
+			<legend>Demographics</legend>
+			<label>First Name:<br/>
+			<input type="text" name="firstName" name=""></label><br/>	
+			<label>Last Name: <br/>
+			<input type="text" name="lastName"></label><br/>
+			<label>Phone Number:<br/>
+			<input type="text" name="phoneNumber"></label>
+		</fieldset>
+		<fieldset>
+			<label for="checkIn">Check in:</label>
+			<input type="date" name="checkIn"/>
+			<label for="checkOut">Check out:</label>
+			<input type="date" name="checkout"/><br/>
+			<label for="numAdults">Number of Adults:<br/>
+			<input type="text" name="numAdults"></label><br/>
+			<label for="numKids">Number of Children:</label>	<br/>
+			<input type="text" name="numKids"><br/>
+			<label for="city">City:<br/></label>
+			<input type="text" name="city"><br/>
+			<label><button>Submit</button></label>
+		</fieldset>
+	</div>
+</main>
+<footer>
+	<div class="container">
+		<ul>
+			<li><a href="https://www.example.com">Contact Us</a></li>
+			<li><a href="https://www.example.com">FAQ</a></li>
+			<li><a href="https://www.example.com">Press Release</a></li>
+			<li><a href="https://www.example.com">Investor Relations</a></li>
+			<li><a href="https://www.example.com">Privacy Policy</a></li>
+		</ul>
+	</div>
+</footer>
+</body>
+</html>
